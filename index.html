@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="topnav">
+        <a href="#" id="showNewBookForm">Dodaj książkę</a>
+        <div id="newBookForm" class="form-popup">
+            <form id="newBookForm" class="form-container">
+                <label for="newBookTitle">
+                    Tytuł książki
+                    <input id="newBookTitle" type="text" name="newBookTitle" placeholder="Tytuł książki"/>
+                </label>
+                <label for="newBookYear">
+                    Rok wydania
+                    <input id="newBookYear" type="text" name="newBookYear" placeholder="Rok wydania"/>
+                </label>
+                <label for="newBookCategory">
+                    Kategoria
+                    <input id="newBookCategory" type="text" name="newBookCategory" placeholder="Kategoria"/>
+                </label>
+                <label for="newBookImage">
+                    Link okładki
+                    <input id="newBookImage" type="url" name="newBookImage" placeholder="Link okładki"/>
+                </label>
+                <label for="newBookAlt">
+                    alt
+                    <input id="newBookAlt" type="" name="newBookAlt" placeholder="alt" />
+                </label>
+                <label for="newBookAuthor">
+                    Autor
+                    <input id="newBookAuthor" type="text" name="newBookAuthor" placeholder="Autor"/>
+                </label>
+                <div class="newBookFormButton">
+                    <button type="submit" class="btn accept">Dodaj</button>
+                    <button id='btnCancel' type="button" class="btn cancel">Anuluj</button>
+                </div>
+            </form>
+        </div>
+        <a href="#" id="showAllBooks">Wszystkie ksiażki</a>
+        <div class="search-container">
+            <form id="SearchForm">
+                <input id="searchInput" type="text" name="searchInput" placeholder="Wyszukaj książkę" />
+                <button class = "fa fa-search" type="submit"></button>
+                <p id="searchAlert" class="search-alert visible-non">za mało znaków</p>
+            </form>
+        </div>
+	</div>
+
+    <ul id="bookList" class="bookList"> </ul>
+    
+    <script src="./js/index.js"></script>
+</body>
+</html>
